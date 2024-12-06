@@ -10,7 +10,10 @@ indoorT_hndl = 0
 handleDone = False
 printCounter = 0
 
-def my_callback_function(state):
+def actuate(state, x):
+    api.exchange.set_actuator_value(state, coolingSch_hndl, x)
+
+def fuzzy_logic_callback_function(state):
      # global variables are necessary as the callback function takes only one input: state
     global coolingSch_hndl, coolingSP_hndl, outdoorT_hndl, indoorT_hndl, handleDone, printCounter
     # get handles
@@ -31,26 +34,53 @@ def my_callback_function(state):
             handleDone = True
         else:
             return
-    # exchange information with EnergyPlus
+    
+    # read variables
     month = api.exchange.month(state) 
     hour = api.exchange.hour(state)
     day_of_week = api.exchange.day_of_week(state)
     day_of_month = api.exchange.day_of_month(state)
     holiday = api.exchange.holiday_index(state)
-    print(f"-------- BEGIN PRINTS COUNT {printCounter} ---------")
+    outdoor_temp = api.exchange.get_variable_value(state, outdoorT_hndl)
+    indoor_temp = api.exchange.get_variable_value(state, indoorT_hndl)
+
+    print(f"----- BEFORE ----- BEGIN PRINTS COUNT {printCounter} ---------")
     print(f"Month: {month}")
     print(f"Hour: {hour}")
     print(f"Day of Week: {day_of_week}")
     print(f"Day of Month: {day_of_month}")
     print(f"Holiday Index: {holiday}")
-        
-    # read variables
-    outdoor_temp = api.exchange.get_variable_value(state, outdoorT_hndl)
-    indoor_temp = api.exchange.get_variable_value(state, indoorT_hndl)
     print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
     print(f"Indoor Temperature: {indoor_temp:.2f}°C")
-    print(f"-------- END PRINTS COUNT {printCounter} ---------")
+    print(f"---- BEFORE ----- END PRINTS COUNT {printCounter} ---------")
+
+    if day_of_week == 1:
+        actuate(state, 30)
+    elif holiday == 3 and day_of_month == 21 and month == 1:
+        actuate(state, 30)
+    elif hour < 6:
+        actuate(state, 30)
+    elif (6 <= hour < 22) and 2 <= day_of_week <= 6:
+        actuate(state, 24)
+    elif 6 <= hour < 18 and day_of_week == 7:
+        actuate(state, 24)
+    elif hour >= 6 and hour >= 18 and day_of_week == 7:
+        actuate(state, 30)
+    elif hour > 22:
+        actuate(state, 30)
+    
+    print(f"----- AFTER ----- BEGIN PRINTS COUNT {printCounter} ---------")
+    print(f"Month: {month}")
+    print(f"Hour: {hour}")
+    print(f"Day of Week: {day_of_week}")
+    print(f"Day of Month: {day_of_month}")
+    print(f"Holiday Index: {holiday}")
+    print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
+    print(f"Indoor Temperature: {indoor_temp:.2f}°C")
+    print(f"---- AFTER ----- END PRINTS COUNT {printCounter} ---------")
+        
     printCounter += 1
+    return 0
 
 # initialize EPlus
 api = EnergyPlusAPI()
@@ -59,7 +89,7 @@ api = EnergyPlusAPI()
 state = api.state_manager.new_state() 
 
 # energyplus model calling point, callback function
-api.runtime.callback_begin_system_timestep_before_predictor(state , my_callback_function)
+api.runtime.callback_begin_system_timestep_before_predictor(state , fuzzy_logic_callback_function)
 
 # run EPlus
 epwFile = 'BRA_Salvador.832290_SWERA.epw'
