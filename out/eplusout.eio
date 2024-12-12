@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 21:43
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:22
 ! <Version>, Version ID
  Version, 24.2
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -218,19 +218,19 @@ Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,20.20,0.00,DefaultMultipliers,Wetbulb,20.20,{C},100714,300,1.2,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,7.9205555617E-004,2.3520606440E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,1.0724010488E-003,3.0618039014E-004,Pass,Pass,4.6548814714E-006,3.7300091534E-006,Pass,Pass
 Environment,SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,08/21,08/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.60,0.00,DefaultMultipliers,Wetbulb,23.60,{C},100714,300,10.3,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,1.9999113476E-011,1.0392095065E-011,Pass,Pass,1.3766180533E-005,7.0509471901E-006,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,2.6336064799E-004,1.2254339514E-004,Pass,Pass,1.8462669122E-006,8.0511330384E-007,Pass,Pass
 Environment,SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,08/21,08/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.30,0.00,DefaultMultipliers,Dewpoint,17.10,{C},100714,300,1.2,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
-Environment:WarmupDays,  5
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,2.2746264131E-010,8.3890745159E-011,Pass,Pass,8.4458238575E-005,3.1616654923E-005,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,1.0729304356E-003,3.1778190491E-004,Pass,Pass,5.9341330157E-006,4.9677858507E-006,Pass,Pass
 Environment,SALVADOR ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,32.40,5.80,DefaultMultipliers,Wetbulb,26.60,{C},100714,120,5.1,0.00,No,No
@@ -293,47 +293,47 @@ Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,32.40,5.80,DefaultMultipliers,Wetbulb,26.60,{C},100714,120,5.1,0.00,No,No
 Environment:Design Day Misc, 52,1214.6,0.1988,0.1199,1.0,-13.80,-10.8,ASHRAETau
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS DB=>MWB,8.7890322551E-002,4.6745478241E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS DB=>MWB,8.7662794060E-002,4.8421446562E-002,Pass,Pass,2.1646693776E-003,1.4121163493E-003,Pass,Pass
 Environment,SALVADOR ANN CLG .4% CONDNS DP=>MDB,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,29.50,5.80,DefaultMultipliers,Dewpoint,26.40,{C},100714,120,5.1,0.00,No,No
 Environment:Design Day Misc, 52,1214.6,0.1988,0.1199,1.0,-13.80,-10.8,ASHRAETau
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS DP=>MDB,8.8958069148E-002,4.6090217768E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS DP=>MDB,8.5214715167E-002,4.6248675127E-002,Pass,Pass,1.4427537974E-003,1.0272574457E-003,Pass,Pass
 Environment,SALVADOR ANN CLG .4% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,31.00,5.80,DefaultMultipliers,Enthalpy,87000.00,{J/kgDryAir},100714,120,5.1,0.00,No,No
 Environment:Design Day Misc, 52,1214.6,0.1988,0.1199,1.0,-13.80,-10.8,ASHRAETau
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS ENTH=>MDB,8.8313619136E-002,4.6576696085E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS ENTH=>MDB,8.6368953137E-002,4.7364330712E-002,Pass,Pass,1.8129614181E-003,1.2128538983E-003,Pass,Pass
 Environment,SALVADOR ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,30.90,5.80,DefaultMultipliers,Wetbulb,27.40,{C},100714,120,5.1,0.00,No,No
 Environment:Design Day Misc, 52,1214.6,0.1988,0.1199,1.0,-13.80,-10.8,ASHRAETau
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS WB=>MDB,8.8360734480E-002,4.6568677758E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN CLG .4% CONDNS WB=>MDB,8.6292945841E-002,4.7299604468E-002,Pass,Pass,1.7879700668E-003,1.1996583392E-003,Pass,Pass
 Environment,SALVADOR ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,08/21,08/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,20.20,0.00,DefaultMultipliers,Wetbulb,20.20,{C},100714,300,1.2,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG 99.6% CONDNS DB,7.9205555617E-004,2.3520606440E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG 99.6% CONDNS DB,1.0724010488E-003,3.0618039014E-004,Pass,Pass,4.6548814714E-006,3.7300091534E-006,Pass,Pass
 Environment,SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB,SizingPeriod:DesignDay,08/21,08/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.60,0.00,DefaultMultipliers,Wetbulb,23.60,{C},100714,300,10.3,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB,1.9999113476E-011,1.0392095065E-011,Pass,Pass,1.3766180533E-005,7.0509471901E-006,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB,2.6336064799E-004,1.2254339514E-004,Pass,Pass,1.8462669122E-006,8.0511330384E-007,Pass,Pass
 Environment,SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB,SizingPeriod:DesignDay,08/21,08/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.30,0.00,DefaultMultipliers,Dewpoint,17.10,{C},100714,300,1.2,0.00,No,No
 Environment:Design Day Misc,233,1106.3,0.1441,6.0255E-002,1.0,-3.33,12.4,ASHRAEClearSky
-Environment:WarmupDays,  5
- Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB,2.2746264131E-010,8.3890745159E-011,Pass,Pass,8.4458238575E-005,3.1616654923E-005,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: SALVADOR ANN HUM_N 99.6% CONDNS DP=>MCDB,1.0729304356E-003,3.1778190491E-004,Pass,Pass,5.9341330157E-006,4.9677858507E-006,Pass,Pass
 Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2006,12/31/2006,Sunday,365,Use RunPeriod Specified Day,No,No,No,Yes,Yes,Clark and Allen
 Environment:Daylight Saving,No,RunPeriod Object
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,RunPeriod: RUN PERIOD 1,8.2762971086E-002,4.3866265787E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,RunPeriod: RUN PERIOD 1,7.7880313627E-002,4.0313645894E-002,Pass,Pass,9.5950850857E-004,6.8409576383E-004,Pass,Pass
 Environment,SALVADOR ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment,SALVADOR ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,02/21,02/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen

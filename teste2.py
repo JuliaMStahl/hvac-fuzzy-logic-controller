@@ -43,6 +43,7 @@ def fuzzy_logic_callback_function(state):
     holiday = api.exchange.holiday_index(state)
     outdoor_temp = api.exchange.get_variable_value(state, outdoorT_hndl)
     indoor_temp = api.exchange.get_variable_value(state, indoorT_hndl)
+    hvac_temp = api.exchange.get_actuator_value(state, coolingSch_hndl)
 
     print(f"----- BEFORE ----- BEGIN PRINTS COUNT {printCounter} ---------")
     print(f"Month: {month}")
@@ -53,6 +54,15 @@ def fuzzy_logic_callback_function(state):
     print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
     print(f"Indoor Temperature: {indoor_temp:.2f}°C")
     print(f"---- BEFORE ----- END PRINTS COUNT {printCounter} ---------")
+
+    print(f"COOLING SCHEDULE {coolingSch_hndl}")
+    print(f"HVAC TEMP {hvac_temp}")
+
+    if month in [6, 7, 8, 9]: # winter
+        actuate(state, 4)
+    
+    print(f"COOLING SCHEDULE {coolingSch_hndl}")
+    print(f"HVAC TEMP {hvac_temp}")
     
     print(f"----- AFTER ----- BEGIN PRINTS COUNT {printCounter} ---------")
     print(f"Month: {month}")

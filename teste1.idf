@@ -419,7 +419,7 @@ Schedule:Compact,
 ScheduleTypeLimits,
   TZ-1 Thermostat Schedule Type Limits,   !- Name
   0,                                      !- Lower Limit Value {BasedOnField A3}
-  4,                                      !- Upper Limit Value {BasedOnField A3}
+  5,                                      !- Upper Limit Value {BasedOnField A3}
   DISCRETE;                               !- Numeric Type
 
 ThermostatSetpoint:SingleCooling,
