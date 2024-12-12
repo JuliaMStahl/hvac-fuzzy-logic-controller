@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:22,
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:28,
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
    **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
    ************* Beginning Zone Sizing Calculations
@@ -33,10 +33,10 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:22,
    ************* Testing Individual Return Air Path Integrity
    ************* All Return Air Paths passed integrity testing
    ************* No node connection errors were found.
-   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "1 SPD DX CLG COIL 7" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -9.36 C.
-   **   ~~~   **  ...Occurrence info = SALVADOR ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1, 08/21 00:00 - 01:00
+   ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed "1 SPD DX CLG COIL 7" - Full load outlet air dry-bulb temperature < 2C. This indicates the possibility of coil frost/freeze. Outlet temperature = -2.34 C.
+   **   ~~~   **  ...Occurrence info = SALVADOR ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1, 08/21 00:00 - 01:00
    **   ~~~   ** ... Possible reasons for low outlet air dry-bulb temperatures are: This DX coil
-   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 11.717 C.
+   **   ~~~   **    1) may have a low inlet air dry-bulb temperature. Inlet air temperature = 18.521 C.
    **   ~~~   **    2) may have a low air flow rate per watt of cooling capacity. Check inputs.
    **   ~~~   **    3) is used as part of a HX assisted cooling coil which uses a high sensible effectiveness. Check inputs.
    ************* Beginning Simulation
@@ -73,10 +73,10 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:22,
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="1 SPD DX CLG COIL 7" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
-   *************  **   ~~~   **   This error occurred 8625 total times;
+   *************  **   ~~~   **   This error occurred 2138 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=-1.435273  Min=-9.387009
+   *************  **   ~~~   **   Max=1.953741  Min=-6.525895
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -88,4 +88,4 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:22,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 6 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 8639 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 28.08sec
+   ************* EnergyPlus Completed Successfully-- 2152 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 26.59sec
