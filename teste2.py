@@ -53,21 +53,6 @@ def fuzzy_logic_callback_function(state):
     print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
     print(f"Indoor Temperature: {indoor_temp:.2f}°C")
     print(f"---- BEFORE ----- END PRINTS COUNT {printCounter} ---------")
-
-    if day_of_week == 1:
-        actuate(state, 30)
-    elif holiday == 3 and day_of_month == 21 and month == 1:
-        actuate(state, 30)
-    elif hour < 6:
-        actuate(state, 30)
-    elif (6 <= hour < 22) and 2 <= day_of_week <= 6:
-        actuate(state, 24)
-    elif 6 <= hour < 18 and day_of_week == 7:
-        actuate(state, 24)
-    elif hour >= 6 and hour >= 18 and day_of_week == 7:
-        actuate(state, 30)
-    elif hour > 22:
-        actuate(state, 30)
     
     print(f"----- AFTER ----- BEGIN PRINTS COUNT {printCounter} ---------")
     print(f"Month: {month}")
@@ -80,7 +65,6 @@ def fuzzy_logic_callback_function(state):
     print(f"---- AFTER ----- END PRINTS COUNT {printCounter} ---------")
         
     printCounter += 1
-    return 0
 
 # initialize EPlus
 api = EnergyPlusAPI()
