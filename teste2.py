@@ -59,7 +59,7 @@ def fuzzy_logic_callback_function(state):
     print(f"HVAC TEMP {hvac_temp}")
 
     if month in [11, 12]: # winter
-        actuate(state, 4)
+        actuate(state, 1)
     
     print(f"COOLING SCHEDULE {coolingSch_hndl}")
     print(f"HVAC TEMP {hvac_temp}")

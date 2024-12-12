@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:28,
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:36,
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
    **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
    ************* Beginning Zone Sizing Calculations
@@ -73,10 +73,10 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:28,
    ************* The following recurring error messages occurred.
    *************
    *************  ** Warning ** CalcDoe2DXCoil: Coil:Cooling:DX:SingleSpeed="1 SPD DX CLG COIL 7" - Full load outlet temperature indicates a possibility of frost/freeze error continues. Outlet air temperature statistics follow:
-   *************  **   ~~~   **   This error occurred 2138 total times;
+   *************  **   ~~~   **   This error occurred 718 total times;
    *************  **   ~~~   **   during Warmup 0 times;
    *************  **   ~~~   **   during Sizing 0 times.
-   *************  **   ~~~   **   Max=1.953741  Min=-6.525895
+   *************  **   ~~~   **   Max=1.953741  Min=-2.477712
    *************
    *************
    ************* ===== Final Error Summary =====
@@ -88,4 +88,4 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.11 22:28,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 6 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 2152 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 26.59sec
+   ************* EnergyPlus Completed Successfully-- 732 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 49.41sec
