@@ -1,6 +1,4 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:53,
-   ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
-   **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:57,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
    **   ~~~   ** Found first in surface=FACE 0
@@ -17,8 +15,8 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:53,
    **   ~~~   ** ...zone temperature             = 18.000 C
    **   ~~~   ** ...supply air temperature       = 14.000 C
    **   ~~~   ** ...temperature difference       = -4.00000 C
-   **   ~~~   ** ...calculated volume flow rate  = 3.60772E-002 m3/s
-   **   ~~~   ** ...calculated mass flow rate    = 3.82538E-002 kg/s
+   **   ~~~   ** ...calculated volume flow rate  = 3.60763E-002 m3/s
+   **   ~~~   ** ...calculated mass flow rate    = 3.82529E-002 kg/s
    ************* Beginning System Sizing Calculations
    ** Warning ** ManageSizing: Calculated Heating Design Air Flow Rate for System=AIR LOOP HVAC 1 is zero.
    **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
@@ -72,4 +70,4 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:53,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 6 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 14 Warning; 0 Severe Errors; Elapsed Time=00hr 01min 10.08sec
+   ************* EnergyPlus Completed Successfully-- 13 Warning; 0 Severe Errors; Elapsed Time=00hr 04min 23.42sec

@@ -12,8 +12,8 @@
  numSubTable=         103
  sizeColumnTag=        1600
  numColumnTag=         912
- sizeTableEntry=        1600
- numTableEntry=        1526
+ sizeTableEntry=        3200
+ numTableEntry=        1904
  sizeCompSizeTableEntry=         100
  numCompSizeTableEntry=          26
  NumOfRVariable=        1488

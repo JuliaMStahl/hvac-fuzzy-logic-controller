@@ -1,14 +1,14 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:53
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.17 21:57
 ! <Version>, Version ID
  Version, 24.2
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
- Timesteps per Hour,  1, 60
+ Timesteps per Hour,  4, 15
 ! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
  System Convergence Limits, 1, 20, 2, 8
 ! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
  Simulation Control, Yes, Yes, Yes, Yes, Yes, Yes
 ! <Performance Precision Tradeoffs>, Use Coil Direct Simulation, Zone Radiant Exchange Algorithm, Override Mode, Number of Timestep In Hour, Force Euler Method, Minimum Number of Warmup Days, Force Suppress All Begin Environment Resets, Minimum System Timestep, MaxZoneTempDiff, MaxAllowedDelTemp
- Performance Precision Tradeoffs, No, ScriptF, Normal, 1, No, 1, No, 1.0, 0.300, 2.0000E-003
+ Performance Precision Tradeoffs, No, ScriptF, Normal, 4, No, 1, No, 1.0, 0.300, 2.0000E-003
 ! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
  Output Reporting Tolerances, 0.200, 0.200, 
 ! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
@@ -71,43 +71,54 @@ Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.
 ! <Material CTF Summary>,Material Name,Thickness {m},Conductivity {w/m-K},Density {kg/m3},Specific Heat {J/kg-K},ThermalResistance {m2-K/w}
 ! <Material:Air>,Material Name,ThermalResistance {m2-K/w}
 ! <CTF>,Time,Outside,Cross,Inside,Flux (except final one)
- Construction CTF,ASHRAE 189.1-2009 EXTWALL MASS CLIMATEZONE 1,   2,   4,   7,   1.000,     0.9866    ,   0.900,   0.900,   0.920,   0.400,Smooth
+ Construction CTF,ASHRAE 189.1-2009 EXTWALL MASS CLIMATEZONE 1,   2,   4,  11,   0.250,     0.9866    ,   0.900,   0.900,   0.920,   0.400,Smooth
  Material CTF Summary,1IN Stucco,  0.0253,         0.692,   1858.000,      837.000,  0.3657E-01
  Material CTF Summary,8IN Concrete HW,  0.2033,         1.730,   2243.000,      837.000,  0.1175    
  Material CTF Summary,Wall Insulation [31],  0.0337,         0.043,     91.000,      837.000,  0.7801    
  Material CTF Summary,1/2IN Gypsum,  0.0127,         0.160,    784.900,      830.000,  0.7937E-01
- CTF,   7,     -0.21773516E-11,      0.13800642E-13,     -0.11992129E-11,      0.27353427E-15
- CTF,   6,      0.37154732E-07,      0.55047994E-09,      0.25311020E-07,     -0.77716404E-12
- CTF,   5,     -0.14805412E-03,      0.15802863E-05,     -0.93311773E-04,      0.12203809E-07
- CTF,   4,      0.60562008E-01,      0.43956516E-03,      0.30282233E-01,     -0.41410562E-04
- CTF,   3,      -2.4240679    ,      0.12504196E-01,     -0.81999575    ,      0.13215584E-01
- CTF,   2,       18.582659    ,      0.45167886E-01,       4.0291845    ,     -0.33805451    
- CTF,   1,      -38.597823    ,      0.20711572E-01,      -6.5943318    ,       1.2445280    
- CTF,   0,       22.458093    ,      0.45094450E-03,       3.4342299    
- Construction CTF,EXTERIOR DOOR,   4,   2,   2,   1.000,      1.181    ,   0.900,   0.900,   0.700,   0.600,Smooth
+ CTF,  11,     -0.26871468E-10,      0.10896853E-14,     -0.13563837E-10,      0.73708867E-16
+ CTF,  10,      0.14613268E-06,      0.70403200E-13,      0.27612934E-07,     -0.94142616E-11
+ CTF,   9,     -0.41246862E-04,      0.22926539E-10,     -0.12092916E-04,      0.16417649E-07
+ CTF,   8,      0.24734208E-02,      0.12763745E-07,      0.91786472E-03,     -0.40703820E-05
+ CTF,   7,     -0.66568972E-01,      0.13598114E-05,     -0.27792181E-01,      0.21333037E-03
+ CTF,   6,      0.96511925    ,      0.38119636E-04,      0.41734042    ,     -0.49257634E-02
+ CTF,   5,      -8.0192784    ,      0.33056655E-03,      -3.3629664    ,      0.59705138E-01
+ CTF,   4,       38.684377    ,      0.93459090E-03,       14.963342    ,     -0.39969113    
+ CTF,   3,      -107.02451    ,      0.82395558E-03,      -37.086221    ,       1.4724751    
+ CTF,   2,       164.04833    ,      0.18820849E-03,       50.526358    ,      -2.8784395    
+ CTF,   1,      -128.00967    ,      0.65342012E-05,      -35.261070    ,       2.7483120    
+ CTF,   0,       39.422094    ,      0.29935514E-08,       9.8324262    
+ Construction CTF,EXTERIOR DOOR,   4,   2,   3,   0.250,      1.181    ,   0.900,   0.900,   0.700,   0.600,Smooth
  Material CTF Summary,F08 Metal surface,  0.0008,        45.280,   7824.000,      500.000,  0.1767E-04
  Material CTF Summary,I01 25mm insulation board,  0.0254,         0.030,     43.000,     1210.000,  0.8467    
- CTF,   2,      0.12730881E-12,      0.50031738E-14,      0.34555789E-14,       0.0000000    
- CTF,   1,     -0.99422564    ,      0.63743334E-01,     -0.11472158    ,      0.12804821E-12
- CTF,   0,       2.1753034    ,       1.1173344    ,       1.2957993    
- Construction CTF,EXTSLABCARPET 4IN CLIMATEZONE 1-8,   5,   2,   4,   1.000,      5.634    ,   0.900,   0.900,   0.850,   0.800,Rough
+ CTF,   3,     -0.30224859E-13,     -0.46113229E-16,     -0.32414681E-15,       0.0000000    
+ CTF,   2,      0.22124204E-02,      0.34460455E-04,      0.64572963E-04,     -0.82807122E-14
+ CTF,   1,      -3.9796549    ,      0.25404538    ,     -0.45944749    ,      0.59819583E-03
+ CTF,   0,       5.1578137    ,      0.92629136    ,       1.6397541    
+ Construction CTF,EXTSLABCARPET 4IN CLIMATEZONE 1-8,   5,   2,   7,   0.250,      5.634    ,   0.900,   0.900,   0.850,   0.800,Rough
  Material CTF Summary,MAT-CC05 4 HW CONCRETE,  0.1016,         1.311,   2240.000,      836.800,  0.7750E-01
  Material CTF Summary,CP02 CARPET PAD,  0.0000,         0.000,      0.000,        0.000,  0.1000    
- CTF,   4,      0.62893117E-08,      0.92553047E-09,      0.49920433E-09,     -0.57409734E-16
- CTF,   3,     -0.43194958E-02,      0.39682855E-03,     -0.11782875E-03,      0.26491835E-07
- CTF,   2,       2.9947396    ,      0.24764772    ,      0.95315728E-01,     -0.26802325E-02
- CTF,   1,      -27.592936    ,       2.2348073    ,      -4.5022004    ,      0.40928639    
- CTF,   0,       27.945615    ,      0.86025010    ,       7.7501006    
- Construction CTF,INTERIOR CEILING,   6,   3,   5,   1.000,      1.449    ,   0.900,   0.900,   0.500,   0.300,MediumRough
+ CTF,   7,     -0.58149412E-15,     -0.97850557E-16,      0.21096531E-15,       0.0000000    
+ CTF,   6,      0.45587194E-08,      0.11944936E-09,      0.14064018E-08,     -0.88822082E-11
+ CTF,   5,     -0.31029382E-04,      0.15981467E-05,     -0.44782469E-05,      0.68870514E-07
+ CTF,   4,      0.28923656E-01,      0.10355187E-02,      0.21394209E-02,     -0.92431417E-04
+ CTF,   3,      -2.7861368    ,      0.56924636E-01,     -0.19601604    ,      0.14816120E-01
+ CTF,   2,       31.886181    ,      0.37066825    ,       3.1969223    ,     -0.29625463    
+ CTF,   1,      -76.650827    ,      0.31831920    ,      -11.046804    ,       1.1453183    
+ CTF,   0,       48.289293    ,      0.20456650E-01,       8.8111634    
+ Construction CTF,INTERIOR CEILING,   6,   3,   8,   0.250,      1.449    ,   0.900,   0.900,   0.500,   0.300,MediumRough
  Material CTF Summary,M11 100mm lightweight concrete,  0.1016,         0.530,   1280.000,      840.000,  0.1917    
  Material:Air,F05 CEILING AIR SPACE RESISTANCE,  0.1800    
  Material CTF Summary,F16 Acoustic tile,  0.0191,         0.060,    368.000,      590.000,  0.3183    
- CTF,   5,     -0.25486579E-11,      0.18330728E-11,     -0.85083900E-11,      0.75566212E-17
- CTF,   4,      0.13816754E-05,      0.55066711E-06,      0.41585273E-05,     -0.30771948E-10
- CTF,   3,     -0.20683317E-01,      0.19690635E-02,     -0.11348556E-01,      0.79821725E-05
- CTF,   2,       2.8230679    ,      0.12540703    ,      0.42673583    ,     -0.20217032E-01
- CTF,   1,      -15.417849    ,      0.38543075    ,      -2.2540756    ,      0.62166608    
- CTF,   0,       13.193035    ,      0.64764791E-01,       2.4162564    
+ CTF,   8,      0.15367515E-13,      0.11642669E-14,      0.33138034E-09,     -0.23332809E-15
+ CTF,   7,     -0.48021614E-07,      0.15063525E-09,     -0.28564588E-06,      0.59772550E-09
+ CTF,   6,      0.33680149E-04,      0.37629998E-06,      0.70603457E-04,     -0.44408020E-06
+ CTF,   5,     -0.56961466E-02,      0.86862473E-04,     -0.62054337E-02,      0.84316649E-04
+ CTF,   4,      0.27607999    ,      0.33353490E-02,      0.18461433    ,     -0.47704004E-02
+ CTF,   3,      -4.6187223    ,      0.25918638E-01,      -1.7214120    ,      0.96569629E-01
+ CTF,   2,       24.222239    ,      0.41562894E-01,       5.9915441    ,     -0.66827209    
+ CTF,   1,      -41.434469    ,      0.11025215E-01,      -8.5217214    ,       1.5197437    
+ CTF,   0,       21.642626    ,      0.16150132E-03,       4.1552009    
 ! <WindowConstruction>,Construction Name,Index,#Layers,Roughness,Conductance {W/m2-K},Conductance (Before Adjusted) {W/m2-K},Convection Coefficient Adjustment Ratio,SHGC,Solar Transmittance at Normal Incidence,Visible Transmittance at Normal Incidence
 ! <WindowMaterial:Glazing>, Material Name, Optical Data Type, Spectral Data Set Name, Thickness {m}, Solar Transmittance,Front Solar Reflectance, Back Solar Reflectance, Visible Transmittance, Front Visible Reflectance,Back Visible Reflectance,Infrared Transmittance, Front Thermal Emissivity, Back Thermal Emissivity,Conductivity {W/m-K},Dirt Factor,Solar Diffusing
  WindowConstruction,ASHRAE 189.1-2009 EXTWINDOW CLIMATEZONE 1,3,1,VerySmooth,6.424,6.424,1.000,0.252,0.238,0.252
@@ -121,7 +132,7 @@ AirflowNetwork Model:Control,NoMultizoneOrDistribution
 ! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
 Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
 ! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
- Load Timesteps in Zone Design Calculation Averaging Window,    1
+ Load Timesteps in Zone Design Calculation Averaging Window,    4
 ! <Heating Sizing Factor Information>, Sizing Factor ID, Value
  Heating Sizing Factor Information, Global,   1.2500    
  Heating Sizing Factor Information, Zone TZ-1,   1.2500    
@@ -129,37 +140,37 @@ Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
  Cooling Sizing Factor Information, Global,   1.1500    
  Cooling Sizing Factor Information, Zone TZ-1,   1.1500    
 ! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
- Zone Sizing Information, TZ-1, Cooling, 156.17353, 179.59956, 3.60772E-002, 4.14887E-002, BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB, 6/21 01:00:00, 22.40000, 1.94857E-002, 70.00000, 0.00000, 0.00000, 0.00000
+ Zone Sizing Information, TZ-1, Cooling, 156.16988, 179.59536, 3.60763E-002, 4.14878E-002, BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB, 6/21 01:00:00, 22.40000, 1.94857E-002, 70.00000, 0.00000, 0.00000, 0.00000
 ! <System Sizing Information>, System Name, Load Type, Peak Load Kind, User Design Capacity [W], Calc Des Air Flow Rate [m3/s], User Des Air Flow Rate [m3/s], Design Day Name, Date/Time of Peak
- System Sizing Information, AIR LOOP HVAC 1, Cooling, Sensible, 424.37, 4.14887E-002, 4.14887E-002, BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB, 6/21 01:00:00
+ System Sizing Information, AIR LOOP HVAC 1, Cooling, Sensible, 424.36, 4.14878E-002, 4.14878E-002, BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB, 6/21 01:00:00
  System Sizing Information, AIR LOOP HVAC 1, Heating, Sensible, 0.00, 0.00000, 0.00000, ,  00:00:00
 ! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
- Component Sizing Information, AirTerminal:SingleDuct:ConstantVolume:NoReheat, DIFFUSER, Design Size Maximum Air Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Maximum Heating Flow Rates [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Minimum Heating Flow Rates [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Maximum Flow Rates [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Heating Design Air Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Cooling Design Air Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Main Design Air Flow Rate [m3/s], 4.14887E-002
+ Component Sizing Information, AirTerminal:SingleDuct:ConstantVolume:NoReheat, DIFFUSER, Design Size Maximum Air Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Maximum Heating Flow Rates [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Minimum Heating Flow Rates [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Sum of Air Terminal Maximum Flow Rates [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Heating Design Air Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Cooling Design Air Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Adjusted Main Design Air Flow Rate [m3/s], 4.14878E-002
  Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, User Heating Air Flow Ratio [], 0.30000
  Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Calculated Heating Air Flow Ratio [], 1.00000
- Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Design Supply Air Flow Rate [m3/s], 4.14887E-002
+ Component Sizing Information, AirLoopHVAC, AIR LOOP HVAC 1, Design Supply Air Flow Rate [m3/s], 4.14878E-002
 !<Controller:MechanicalVentilation>,Name,Availability Schedule Name,Demand Controlled Ventilation {Yes/No},System Outdoor Air Method,Zone Maximum Outdoor Air Fraction,Number of Zones,Zone Name,DSOA Name,DSZAD Name
  Controller:MechanicalVentilation,CONTROLLER MECHANICAL VENTILATION 1,ALWAYS ON DISCRETE HVAC_LIBRARY,No,ZoneSum,1.00,1,TZ-1,TZ-1 ZERO AIR DSOA,
- Component Sizing Information, Controller:OutdoorAir, OUTDOOR AIR CONTROLLER, Maximum Outdoor Air Flow Rate [m3/s], 4.14887E-002
+ Component Sizing Information, Controller:OutdoorAir, OUTDOOR AIR CONTROLLER, Maximum Outdoor Air Flow Rate [m3/s], 4.14878E-002
  Component Sizing Information, Controller:OutdoorAir, OUTDOOR AIR CONTROLLER, Minimum Outdoor Air Flow Rate [m3/s], 0.00000
- Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Supply Air Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Cooling Supply Air Flow Rate [m3/s], 4.14887E-002
+ Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Supply Air Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Cooling Supply Air Flow Rate [m3/s], 4.14878E-002
  Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, User-Specified No Load Supply Air Flow Rate [m3/s], 0.00000
- Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Nominal Cooling Capacity [W], 1030.26387
+ Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Nominal Cooling Capacity [W], 1030.23979
  Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Design Size Maximum Supply Air Temperature [C], 16.70000
  Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, User-Specified Maximum Supply Air Temperature [C], 80.00000
  Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, User-Specified Supplemental Heating Coil Nominal Capacity [W], 0.00000
  Component Sizing Information, AirLoopHVAC:UnitarySystem, UNITARY - SINGLE SPEED DX COOLING - CYCLING - ELEC REHEAT, Fraction of Supply Air Flow That Goes Through the Controlling Zone, 1.00000
- Component Sizing Information, Fan:OnOff, FAN ON OFF 8, Design Size Maximum Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, Fan:OnOff, FAN ON OFF 8, Design Electric Power Consumption [W], 20.74436
- Component Sizing Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, Design Size Rated Air Flow Rate [m3/s], 4.14887E-002
- Component Sizing Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, Design Size Gross Rated Total Cooling Capacity [W], 1030.26387
+ Component Sizing Information, Fan:OnOff, FAN ON OFF 8, Design Size Maximum Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, Fan:OnOff, FAN ON OFF 8, Design Electric Power Consumption [W], 20.74388
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, Design Size Rated Air Flow Rate [m3/s], 4.14878E-002
+ Component Sizing Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, Design Size Gross Rated Total Cooling Capacity [W], 1030.23979
  Component Sizing Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, Design Size Gross Rated Sensible Heat Ratio, 0.70108
 ! <DX Cooling Coil Standard Rating Information>, Component Type, Component Name, Standard Rating (Net) Cooling Capacity {W}, Standard Rating Net COP {W/W}, EER {Btu/W-h}, SEER User {Btu/W-h}, SEER Standard {Btu/W-h}, IEER {Btu/W-h}
  DX Cooling Coil Standard Rating Information, Coil:Cooling:DX:SingleSpeed, 1 SPD DX CLG COIL 7, 997.5, 2.66, 9.06, 9.02, 9.02, 9.4
@@ -194,43 +205,43 @@ Environment:Design Day Data,32.10,11.30,DefaultMultipliers,Wetbulb,17.90,{C},892
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
 Environment:WarmupDays,  3
 ! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,0.1175404470,6.5521532376E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,3.2598090956E-002,1.8390710617E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.40,11.30,DefaultMultipliers,Dewpoint,21.10,{C},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
 Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1,0.1281220920,6.9025401405E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1,3.5416748220E-002,1.8595107815E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,26.50,11.30,DefaultMultipliers,Enthalpy,70800.00,{J/kgDryAir},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB HVAC Sizing Pass 1,0.1229262599,6.5702496639E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB HVAC Sizing Pass 1,3.3972555926E-002,1.7761011687E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,26.40,11.30,DefaultMultipliers,Wetbulb,22.20,{C},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,0.1231191358,6.5762139902E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,3.4024880537E-002,1.7762265362E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,9.80,0.00,DefaultMultipliers,Wetbulb,9.80,{C},89212,270,0.4,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,1.1058843719E-003,2.4217332724E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,2.5858926454E-004,8.3674729370E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,22.40,0.00,DefaultMultipliers,Wetbulb,22.40,{C},89212,270,7.7,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,2.1758377298E-004,9.9595588828E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB HVAC Sizing Pass 1,3.7364718693E-005,1.8029988043E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,25.00,0.00,DefaultMultipliers,Dewpoint,3.00,{C},89212,270,0.4,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,1.2238291895E-003,3.6026135448E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB HVAC Sizing Pass 1,2.8871872791E-004,1.0141470569E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,32.10,11.30,DefaultMultipliers,Wetbulb,17.90,{C},89212,60,3.3,0.00,No,No
@@ -293,47 +304,47 @@ Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,32.10,11.30,DefaultMultipliers,Wetbulb,17.90,{C},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB,0.1175404470,6.5521532376E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB,3.2598090956E-002,1.8390710617E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,23.40,11.30,DefaultMultipliers,Dewpoint,21.10,{C},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
 Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB,0.1281220920,6.9025401405E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB,3.5416748220E-002,1.8595107815E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,26.50,11.30,DefaultMultipliers,Enthalpy,70800.00,{J/kgDryAir},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB,0.1229262599,6.5702496639E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS ENTH=>MDB,3.3972555926E-002,1.7761011687E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,26.40,11.30,DefaultMultipliers,Wetbulb,22.20,{C},89212,60,3.3,0.00,No,No
 Environment:Design Day Misc,294,1191.2,0.1796,9.6924E-002,1.0,15.18,-10.4,ASHRAETau
-Environment:WarmupDays,  4
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB,0.1231191358,6.5762139902E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+Environment:WarmupDays,  3
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS WB=>MDB,3.4024880537E-002,1.7762265362E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,9.80,0.00,DefaultMultipliers,Wetbulb,9.80,{C},89212,270,0.4,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB,1.1058843719E-003,2.4217332724E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG 99.6% CONDNS DB,2.5858926454E-004,8.3674729370E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,22.40,0.00,DefaultMultipliers,Wetbulb,22.40,{C},89212,270,7.7,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB,2.1758377298E-004,9.9595588828E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HTG WIND 99.6% CONDNS WS=>MCDB,3.7364718693E-005,1.8029988043E-005,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB,SizingPeriod:DesignDay,06/21,06/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment:Design Day Data,25.00,0.00,DefaultMultipliers,Dewpoint,3.00,{C},89212,270,0.4,0.00,No,No
 Environment:Design Day Misc,172,1088.0,0.1424,5.7719E-002,1.0,-1.34,23.4,ASHRAEClearSky
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB,1.2238291895E-003,3.6026135448E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,SizingPeriod: BRASILIA_(CIV/MIL) ANN HUM_N 99.6% CONDNS DP=>MCDB,2.8871872791E-004,1.0141470569E-004,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,RUN PERIOD 1,WeatherFileRunPeriod,01/01/2006,12/31/2006,Sunday,365,Use RunPeriod Specified Day,No,No,No,Yes,Yes,Clark and Allen
 Environment:Daylight Saving,No,RunPeriod Object
 Environment:WarmupDays,  3
- Warmup Convergence Information,TZ-1,RunPeriod: RUN PERIOD 1,9.2069292071E-002,5.7327460596E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
+ Warmup Convergence Information,TZ-1,RunPeriod: RUN PERIOD 1,2.6425982266E-002,1.7322257601E-002,Pass,Pass,0.0000000000,0.0000000000,Pass,Pass
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
 Environment:Daylight Saving,No,SizingPeriod:DesignDay
 Environment,BRASILIA_(CIV/MIL) ANN CLG .4% CONDNS DP=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,10/21,10/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
