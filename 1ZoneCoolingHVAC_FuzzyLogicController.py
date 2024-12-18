@@ -100,7 +100,7 @@ api.runtime.callback_begin_system_timestep_before_predictor(state , fuzzy_logic_
 
 # run EPlus
 epwFile = 'BRA_Salvador.832290_SWERA.epw'
-idfFile =  'teste1.idf'
+idfFile =  '1ZoneCoolingHVAC.idf'
 output_folder = 'out'
 # -x short form to run expandobjects for HVACtemplates. see EnergyPlusEssentials.pdf p16
 cmd_args = ['-w',epwFile, '-d', output_folder,'-x',idfFile]
