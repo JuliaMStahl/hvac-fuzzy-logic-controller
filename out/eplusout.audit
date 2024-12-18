@@ -12,13 +12,13 @@
  numSubTable=         103
  sizeColumnTag=        1600
  numColumnTag=         912
- sizeTableEntry=        3200
- numTableEntry=        1904
+ sizeTableEntry=        1600
+ numTableEntry=        1533
  sizeCompSizeTableEntry=         100
  numCompSizeTableEntry=          26
  NumOfRVariable=        1488
  NumOfRVariable(Total)=        1488
- NumOfRVariable(Actual)=          16
+ NumOfRVariable(Actual)=          13
  NumOfRVariable(Summed)=          13
  NumOfRVariable(Meter)=          13
  NumOfIVariable=          96
@@ -32,7 +32,7 @@
  MaxVerticesPerSurface=           4
  ClippingAlgorithm=SutherlandHodgman
  MonthlyFieldSetInputCount=           0
- NumConsideredOutputVariables=           3
+ NumConsideredOutputVariables=           0
  MaxConsideredOutputVariables=       10000
  numActuatorsUsed=           0
  numEMSActuatorsAvailable=         312
