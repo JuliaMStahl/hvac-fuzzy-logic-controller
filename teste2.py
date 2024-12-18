@@ -83,45 +83,11 @@ def fuzzy_logic_callback_function(state):
             return
     
     # read variables
-    month = api.exchange.month(state) 
-    hour = api.exchange.hour(state)
-    day_of_week = api.exchange.day_of_week(state)
-    day_of_month = api.exchange.day_of_month(state)
-    holiday = api.exchange.holiday_index(state)
     outdoor_temp = api.exchange.get_variable_value(state, outdoorT_hndl)
     indoor_temp = api.exchange.get_variable_value(state, indoorT_hndl)
-    hvac_temp = api.exchange.get_actuator_value(state, coolingSch_hndl)
-
-    print(f"----- BEFORE ----- BEGIN PRINTS COUNT {printCounter} ---------")
-    print(f"Month: {month}")
-    print(f"Hour: {hour}")
-    print(f"Day of Week: {day_of_week}")
-    print(f"Day of Month: {day_of_month}")
-    print(f"Holiday Index: {holiday}")
-    print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
-    print(f"Indoor Temperature: {indoor_temp:.2f}°C")
-    print(f"---- BEFORE ----- END PRINTS COUNT {printCounter} ---------")
-
-    print(f"COOLING SCHEDULE {coolingSch_hndl}")
-    print(f"HVAC TEMP {hvac_temp}")
 
     result = simulate(outdoor_temp, indoor_temp)
     actuate(state, result)
-    
-    print(f"COOLING SCHEDULE {coolingSch_hndl}")
-    print(f"HVAC TEMP {hvac_temp}")
-    
-    print(f"----- AFTER ----- BEGIN PRINTS COUNT {printCounter} ---------")
-    print(f"Month: {month}")
-    print(f"Hour: {hour}")
-    print(f"Day of Week: {day_of_week}")
-    print(f"Day of Month: {day_of_month}")
-    print(f"Holiday Index: {holiday}")
-    print(f"Outdoor Temperature: {outdoor_temp:.2f}°C")
-    print(f"Indoor Temperature: {indoor_temp:.2f}°C")
-    print(f"---- AFTER ----- END PRINTS COUNT {printCounter} ---------")
-        
-    printCounter += 1
 
 # initialize EPlus
 api = EnergyPlusAPI()
