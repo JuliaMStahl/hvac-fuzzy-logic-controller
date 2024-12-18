@@ -2191,19 +2191,19 @@ Output:Table:SummaryReports,
   AllSummary;                             !- Report Name 1
 
 Site:Location,
-  SAO_PAULO/CONGONHAS,                    !- Name
-  -23.62,                                 !- Latitude {deg}
-  -46.65,                                 !- Longitude {deg}
+  CURITIBA/AFONSO_PEN,                    !- Name
+  -25.52,                                 !- Latitude {deg}
+  -49.17,                                 !- Longitude {deg}
   -3,                                     !- Time Zone {hr}
-  803;                                    !- Elevation {m}
+  908;                                    !- Elevation {m}
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Clg .4% Condns DB=>MWB, !- Name
+  CURITIBA/AFONSO_PEN Ann Clg .4% Condns DB=>MWB, !- Name
   2,                                      !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  32.1,                                   !- Maximum Dry-Bulb Temperature {C}
-  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  30.9,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
@@ -2212,28 +2212,28 @@ SizingPeriod:DesignDay,
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  3.1,                                    !- Wind Speed {m/s}
-  330,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  4.5,                                    !- Wind Speed {m/s}
+  300,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.398,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.341,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Clg .4% Condns DP=>MDB, !- Name
+  CURITIBA/AFONSO_PEN Ann Clg .4% Condns DP=>MDB, !- Name
   2,                                      !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  25.5,                                   !- Maximum Dry-Bulb Temperature {C}
-  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  24.3,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Dewpoint,                               !- Humidity Condition Type
@@ -2242,99 +2242,99 @@ SizingPeriod:DesignDay,
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  3.1,                                    !- Wind Speed {m/s}
-  330,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  4.5,                                    !- Wind Speed {m/s}
+  300,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.398,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.341,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Clg .4% Condns Enth=>MDB, !- Name
+  CURITIBA/AFONSO_PEN Ann Clg .4% Condns Enth=>MDB, !- Name
   2,                                      !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  27.9,                                   !- Maximum Dry-Bulb Temperature {C}
-  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  26.5,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Enthalpy,                               !- Humidity Condition Type
   ,                                       !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
-  73700,                                  !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  73800,                                  !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  3.1,                                    !- Wind Speed {m/s}
-  330,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  4.5,                                    !- Wind Speed {m/s}
+  300,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.398,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.341,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Clg .4% Condns WB=>MDB, !- Name
+  CURITIBA/AFONSO_PEN Ann Clg .4% Condns WB=>MDB, !- Name
   2,                                      !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  27.7,                                   !- Maximum Dry-Bulb Temperature {C}
-  8.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  26.9,                                   !- Maximum Dry-Bulb Temperature {C}
+  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  23.3,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  23.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  3.1,                                    !- Wind Speed {m/s}
-  330,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  4.5,                                    !- Wind Speed {m/s}
+  300,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.398,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.341,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Htg 99.6% Condns DB, !- Name
+  CURITIBA/AFONSO_PEN Ann Htg 99.6% Condns DB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  8.9,                                    !- Maximum Dry-Bulb Temperature {C}
+  2.7,                                    !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  8.9,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  2.7,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  2.4,                                    !- Wind Speed {m/s}
-  160,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  1.4,                                    !- Wind Speed {m/s}
+  130,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2348,23 +2348,23 @@ SizingPeriod:DesignDay,
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Htg Wind 99.6% Condns WS=>MCDB, !- Name
+  CURITIBA/AFONSO_PEN Ann Htg Wind 99.6% Condns WS=>MCDB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  19.8,                                   !- Maximum Dry-Bulb Temperature {C}
+  20.4,                                   !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  19.8,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  20.4,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  8,                                      !- Wind Speed {m/s}
-  160,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  9.9,                                    !- Wind Speed {m/s}
+  130,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2378,23 +2378,23 @@ SizingPeriod:DesignDay,
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  SAO_PAULO/CONGONHAS Ann Hum_n 99.6% Condns DP=>MCDB, !- Name
+  CURITIBA/AFONSO_PEN Ann Hum_n 99.6% Condns DP=>MCDB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  18.5,                                   !- Maximum Dry-Bulb Temperature {C}
+  7.1,                                    !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Dewpoint,                               !- Humidity Condition Type
-  3.9,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  -1.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  92043,                                  !- Barometric Pressure {Pa}
-  2.4,                                    !- Wind Speed {m/s}
-  160,                                    !- Wind Direction {deg}
+  90882,                                  !- Barometric Pressure {Pa}
+  1.4,                                    !- Wind Speed {m/s}
+  130,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2434,6 +2434,7 @@ Output:Variable,
     *,                       !- Key Value
     Zone Thermostat Cooling Setpoint Temperature,  !- Variable Name
     Hourly;                  !- Reporting Frequency
+
 
 Output:SQLite,
   SimpleAndTabular;                       !- Option Type

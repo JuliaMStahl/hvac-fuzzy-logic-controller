@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.18 18:20,
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.18 18:26,
    ** Warning ** Version: in IDF="24.1" not the same as expected="24.2"
    ** Warning ** Version: in IDF="24.1" not the same as expected="24.2"
    ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
@@ -14,13 +14,13 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.18 18:20,
    ** Warning ** UpdateZoneSizing: Cooling supply air temperature (calculated) within 5C of zone temperature
    **   ~~~   ** ...check zone thermostat set point and design supply air temperatures
    **   ~~~   ** ...zone name = TZ-1
-   **   ~~~   ** ...design sensible cooling load = 11.79 W
+   **   ~~~   ** ...design sensible cooling load = 45.91 W
    **   ~~~   ** ...thermostat set point temp    = 24.000 C
    **   ~~~   ** ...zone temperature             = 18.000 C
    **   ~~~   ** ...supply air temperature       = 14.000 C
    **   ~~~   ** ...temperature difference       = -4.00000 C
-   **   ~~~   ** ...calculated volume flow rate  = 2.64019E-003 m3/s
-   **   ~~~   ** ...calculated mass flow rate    = 2.88834E-003 kg/s
+   **   ~~~   ** ...calculated volume flow rate  = 1.04100E-002 m3/s
+   **   ~~~   ** ...calculated mass flow rate    = 1.12447E-002 kg/s
    ************* Beginning System Sizing Calculations
    ** Warning ** ManageSizing: Calculated Heating Design Air Flow Rate for System=AIR LOOP HVAC 1 is zero.
    **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
@@ -74,4 +74,4 @@ Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2024.12.18 18:20,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 6 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 16 Warning; 0 Severe Errors; Elapsed Time=00hr 01min 13.64sec
+   ************* EnergyPlus Completed Successfully-- 16 Warning; 0 Severe Errors; Elapsed Time=00hr 01min 24.48sec
