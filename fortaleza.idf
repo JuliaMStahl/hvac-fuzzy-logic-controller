@@ -2148,8 +2148,8 @@ Coil:Heating:Electric,
 SetpointManager:SingleZone:Cooling,
   Setpoint Manager Single Zone Cooling,   !- Name
   Temperature,                            !- Control Variable
-  -99,                                    !- Minimum Supply Air Temperature {C}
-  99,                                     !- Maximum Supply Air Temperature {C}
+  16,                                     !- Minimum Supply Air Temperature {C}
+  16,                                     !- Maximum Supply Air Temperature {C}
   TZ-1,                                   !- Control Zone Name
   Node 1,                                 !- Zone Node Name
   Node 6,                                 !- Zone Inlet Node Name
@@ -2191,150 +2191,150 @@ Output:Table:SummaryReports,
   AllSummary;                             !- Report Name 1
 
 Site:Location,
-  CURITIBA/AFONSO_PEN,                    !- Name
-  -25.52,                                 !- Latitude {deg}
-  -49.17,                                 !- Longitude {deg}
+  FORTALEZA/PINTO_MAR,                    !- Name
+  -3.78,                                  !- Latitude {deg}
+  -38.53,                                 !- Longitude {deg}
   -3,                                     !- Time Zone {hr}
-  908;                                    !- Elevation {m}
+  25;                                     !- Elevation {m}
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Clg .4% Condns DB=>MWB, !- Name
-  2,                                      !- Month
+  FORTALEZA/PINTO_MAR Ann Clg .4% Condns DB=>MWB, !- Name
+  12,                                     !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  30.9,                                   !- Maximum Dry-Bulb Temperature {C}
-  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  32.2,                                   !- Maximum Dry-Bulb Temperature {C}
+  5.7,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  20.4,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  25.2,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  4.5,                                    !- Wind Speed {m/s}
-  300,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  5.9,                                    !- Wind Speed {m/s}
+  120,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.429,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.25,                                   !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Clg .4% Condns DP=>MDB, !- Name
-  2,                                      !- Month
+  FORTALEZA/PINTO_MAR Ann Clg .4% Condns DP=>MDB, !- Name
+  12,                                     !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  24.3,                                   !- Maximum Dry-Bulb Temperature {C}
-  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  27.8,                                   !- Maximum Dry-Bulb Temperature {C}
+  5.7,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Dewpoint,                               !- Humidity Condition Type
-  22.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  26.2,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  4.5,                                    !- Wind Speed {m/s}
-  300,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  5.9,                                    !- Wind Speed {m/s}
+  120,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.429,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.25,                                   !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Clg .4% Condns Enth=>MDB, !- Name
-  2,                                      !- Month
+  FORTALEZA/PINTO_MAR Ann Clg .4% Condns Enth=>MDB, !- Name
+  12,                                     !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  26.5,                                   !- Maximum Dry-Bulb Temperature {C}
-  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  30.1,                                   !- Maximum Dry-Bulb Temperature {C}
+  5.7,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Enthalpy,                               !- Humidity Condition Type
   ,                                       !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
-  73800,                                  !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  84300,                                  !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  4.5,                                    !- Wind Speed {m/s}
-  300,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  5.9,                                    !- Wind Speed {m/s}
+  120,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.429,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.25,                                   !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Clg .4% Condns WB=>MDB, !- Name
-  2,                                      !- Month
+  FORTALEZA/PINTO_MAR Ann Clg .4% Condns WB=>MDB, !- Name
+  12,                                     !- Month
   21,                                     !- Day of Month
   SummerDesignDay,                        !- Day Type
-  26.9,                                   !- Maximum Dry-Bulb Temperature {C}
-  9.2,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
+  29.8,                                   !- Maximum Dry-Bulb Temperature {C}
+  5.7,                                    !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  23.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  26.7,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  4.5,                                    !- Wind Speed {m/s}
-  300,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  5.9,                                    !- Wind Speed {m/s}
+  120,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
   ASHRAETau,                              !- Solar Model Indicator
   ,                                       !- Beam Solar Day Schedule Name
   ,                                       !- Diffuse Solar Day Schedule Name
-  0.369,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
-  2.484,                                  !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
+  0.429,                                  !- ASHRAE Clear Sky Optical Depth for Beam Irradiance (taub) {dimensionless}
+  2.25,                                   !- ASHRAE Clear Sky Optical Depth for Diffuse Irradiance (taud) {dimensionless}
   ,                                       !- Sky Clearness
   ,                                       !- Maximum Number Warmup Days
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Htg 99.6% Condns DB, !- Name
+  FORTALEZA/PINTO_MAR Ann Htg 99.6% Condns DB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  2.7,                                    !- Maximum Dry-Bulb Temperature {C}
+  22.8,                                   !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  2.7,                                    !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  22.8,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  1.4,                                    !- Wind Speed {m/s}
-  130,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  2.2,                                    !- Wind Speed {m/s}
+  180,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2348,23 +2348,23 @@ SizingPeriod:DesignDay,
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Htg Wind 99.6% Condns WS=>MCDB, !- Name
+  FORTALEZA/PINTO_MAR Ann Htg Wind 99.6% Condns WS=>MCDB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  20.4,                                   !- Maximum Dry-Bulb Temperature {C}
+  29,                                     !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Wetbulb,                                !- Humidity Condition Type
-  20.4,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  29,                                     !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  9.9,                                    !- Wind Speed {m/s}
-  130,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  10,                                     !- Wind Speed {m/s}
+  180,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2378,23 +2378,23 @@ SizingPeriod:DesignDay,
   FullResetAtBeginEnvironment;            !- Begin Environment Reset Mode
 
 SizingPeriod:DesignDay,
-  CURITIBA/AFONSO_PEN Ann Hum_n 99.6% Condns DP=>MCDB, !- Name
+  FORTALEZA/PINTO_MAR Ann Hum_n 99.6% Condns DP=>MCDB, !- Name
   7,                                      !- Month
   21,                                     !- Day of Month
   WinterDesignDay,                        !- Day Type
-  7.1,                                    !- Maximum Dry-Bulb Temperature {C}
+  29.4,                                   !- Maximum Dry-Bulb Temperature {C}
   0,                                      !- Daily Dry-Bulb Temperature Range {deltaC}
   DefaultMultipliers,                     !- Dry-Bulb Temperature Range Modifier Type
   ,                                       !- Dry-Bulb Temperature Range Modifier Day Schedule Name
   Dewpoint,                               !- Humidity Condition Type
-  -1.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
+  17.1,                                   !- Wetbulb or DewPoint at Maximum Dry-Bulb {C}
   ,                                       !- Humidity Condition Day Schedule Name
   ,                                       !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
   ,                                       !- Enthalpy at Maximum Dry-Bulb {J/kg}
   ,                                       !- Daily Wet-Bulb Temperature Range {deltaC}
-  90882,                                  !- Barometric Pressure {Pa}
-  1.4,                                    !- Wind Speed {m/s}
-  130,                                    !- Wind Direction {deg}
+  101025,                                 !- Barometric Pressure {Pa}
+  2.2,                                    !- Wind Speed {m/s}
+  180,                                    !- Wind Direction {deg}
   No,                                     !- Rain Indicator
   No,                                     !- Snow Indicator
   No,                                     !- Daylight Saving Time Indicator
@@ -2434,7 +2434,6 @@ Output:Variable,
     *,                       !- Key Value
     Zone Thermostat Cooling Setpoint Temperature,  !- Variable Name
     Hourly;                  !- Reporting Frequency
-
 
 Output:SQLite,
   SimpleAndTabular;                       !- Option Type
