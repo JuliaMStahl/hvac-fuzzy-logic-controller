@@ -15,6 +15,7 @@ Fuzzy logic provides a way to model control systems that handle the inherent unc
 ## Repository Structure
 
 - `1ZoneCoolingHVAC.idf`: An EnergyPlus input data file defining a single-zone cooling HVAC system.
+- `1ZoneCoolingHVAC.osm`: An OpenStudio file defining a single-zone cooling HVAC system. From this file, the .idf file was exported
 - `1ZoneCoolingHVAC_FuzzyLogicController.py`: Python script implementing the fuzzy logic controller and managing the interaction with EnergyPlus API.
 - `weather/`: Directory containing weather data files required for the simulations.
 - `references_idf/`: Directory with additional EnergyPlus input data files referenced by the main simulation files.
@@ -73,6 +74,7 @@ These objects are essential for the comunication with the EnergyPlus API.
 
 ## References
 1. EnergyPlus: A whole building energy simulation program. More information and downloads are available at: https://energyplus.net
+2. OpenStudio: A grafic interface to build IDF files and run EnergyPlus' simulations. More information and downloads are available at: https://openstudio.net/
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
