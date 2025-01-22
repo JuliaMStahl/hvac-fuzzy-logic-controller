@@ -16,9 +16,9 @@ Fuzzy logic provides a way to model control systems that handle the inherent unc
 
 - `1ZoneCoolingHVAC.idf`: An EnergyPlus input data file defining a single-zone cooling HVAC system.
 - `1ZoneCoolingHVAC_FuzzyLogicController.py`: Python script implementing the fuzzy logic controller and managing the interaction with EnergyPlus API.
-- `fortaleza.idf`: An EnergyPlus input data file tailored for the climate conditions of Fortaleza, Brazil.
 - `weather/`: Directory containing weather data files required for the simulations.
 - `references_idf/`: Directory with additional EnergyPlus input data files referenced by the main simulation files.
+- `reports/`: Directory with generated reports from the EnergyPlus' simulations, with and without the fuzzy logic controller. The files were named by the city from the weather file used in the simulation.
 - `.gitignore`: Specifies files and directories to be ignored by Git.
 
 ## Getting Started
