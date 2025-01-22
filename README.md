@@ -46,6 +46,31 @@ The script will initialize the fuzzy logic controller, set up the simulation env
 ## Customization
 You can modify the input data files (.idf) and the Python script to adapt the controller to different building configurations, climate conditions, or control strategies. Refer to the EnergyPlus documentation for details on input data file structure and available features.
 
+For the simulation to run successfully, ensure that the (.idf) file contains the follow objects:
+
+    
+    Output:VariableDictionary,
+    IDF,                                    !- Key Field
+    Unsorted;                               !- Sort Option
+
+    Output:VariableDictionary,Regular;
+
+    Output:Surfaces:Drawing,DXF;
+
+    Output:Constructions,Constructions;
+
+    Output:Variable,
+        *,                       !- Key Value
+        Zone Mean Air Temperature,  !- Variable Name
+        Hourly;                  !- Reporting Frequency
+
+    Output:Variable,
+        *,                       !- Key Value
+        Site Outdoor Air Drybulb Temperature,  !- Variable Name
+        Hourly;                  !- Reporting Frequency
+
+These objects are essential for the comunication with the EnergyPlus API.
+
 ## References
 1. EnergyPlus: A whole building energy simulation program. More information and downloads are available at: https://energyplus.net
 
