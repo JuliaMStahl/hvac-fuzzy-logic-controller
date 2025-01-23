@@ -75,6 +75,7 @@ These objects are essential for the comunication with the EnergyPlus API.
 ## References
 1. EnergyPlus: A whole building energy simulation program. More information and downloads are available at: https://energyplus.net
 2. OpenStudio: A grafic interface to build IDF files and run EnergyPlus' simulations. More information and downloads are available at: https://openstudio.net/
+3. EnergyPlus Python API: to run and use user-defined Python scripts to manipulate the running simulation. More information available at: https://energyplus.readthedocs.io/en/latest/api.html
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
