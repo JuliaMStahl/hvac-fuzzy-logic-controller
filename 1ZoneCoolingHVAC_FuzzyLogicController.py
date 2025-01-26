@@ -2,11 +2,9 @@
 import sys
 sys.path.insert(0, 'C:\\EnergyPlusV24-2-0') 
 from pyenergyplus.api import EnergyPlusAPI # type: ignore
-from pyenergyplus.plugin import EnergyPlusPlugin # type: ignore
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
-import matplotlib.pyplot as plt
 
 coolingSch_hndl = 0
 outdoorT_hndl = 0
