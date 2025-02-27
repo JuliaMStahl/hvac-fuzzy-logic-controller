@@ -1,0 +1,10 @@
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Mack Stahl"
+  given-names: "Julia"
+  orcid: "https://github.com/JuliaMStahl"
+title: "HVAC Fuzzy Logic Controller"
+version: 1.0
+date-released: 2025-02-18
+url: "https://github.com/JuliaMStahl/hvac-fuzzy-logic-controller"
